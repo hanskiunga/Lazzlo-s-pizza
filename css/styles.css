@@ -1,0 +1,24 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+.jumbotron{
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 5rem;
+    opacity: 65%;
+}
+body{
+    background-image:url(../assets/bg/bgintro.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    text-align: center;
+    color: maroon;
+}

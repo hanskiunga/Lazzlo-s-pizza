@@ -18,11 +18,17 @@
 <body>
   <div class="alert alert-primary alert-dismissible fade show" role="alert" id="alert">
     Thank you, your order has been received <span id="location"></span>
-    <button type="button" class="close" data-dismiss="alert aria-label="Close" id="close-alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="close-alert">
       <span aria-hidden="true">&times;</span>
     </button>
-
   </div>
+  <div class="alert alert-primary alert-dismissible fade show" role="alert" id="alert2">
+    Thank you, your order has been received <span id="location"></span>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="close-alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
     <div class="container-fluid">
                     <!-- navigation bar -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
@@ -37,20 +43,20 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link navbar-text active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link navbar-text" href="#">Menu</a>
-                  <a class="nav-link navbar-text" href="#">About</a>
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link navbar-text active" href="#menu">Menu</a>
+                  <a class="nav-link navbar-text active" href="#about">About</a>
+                  <a class="nav-link navbar-text" href="#contact">Contact</a>
                 </div>
               </div>
             </div>
           </nav>
 
-                    <!-- homepage -->
+  <!-- homepage -->
             <div class="carousel">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active" ></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
@@ -81,10 +87,375 @@
             </div>
     </div>
 
-    <!-- Menu -->
-    <div class="contrainer-fluid">
-
+<!-- Menu -->
+    <div class="container">
+      <h2 class="align-center" id="menu">Our menu</h2>
+      <hr class="style.one">
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 sol-sm-12 col-xs-12">
+          <div class="card">
+            <img src="assets/img/pizza1.jpg" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title"> mushroom</h5>
+              <p class="card-text">Rating: <i class="fas fa-star"></i>  <i class="fas fa-star"></i>  <i class="fas fa-star"></i></p>
+              <button type="button" class="btn- btn-outline-secondary" data-toggle="modal" data-target="#pizza-one"><i class="fas fa-shopping-cart"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 sol-sm-12 col-xs-12">
+          <div class="card">
+            <img src="assets/img/pizza3.jpg" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title"> meaty sundae</h5>
+              <p class="card-text">Rating: <i class="fas fa-star"></i>  <i class="fas fa-star"></i>  <i class="fas fa-star"></i></p>
+              <button type="button" class="btn- btn-outline-secondary" data-toggle="modal" data-target="#pizza-two"><i class="fas fa-shopping-cart"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 sol-sm-12 col-xs-12">
+          <div class="card">
+            <img src="assets/img/pizza6.jpg" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title"> chicken spicey</h5>
+              <p class="card-text">Rating: <i class="fas fa-star"></i>  <i class="fas fa-star"></i>  <i class="fas fa-star"></i></p>
+              <button type="button" class="btn- btn-outline-secondary" data-toggle="modal" data-target="#pizza-four"><i class="fas fa-shopping-cart"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 sol-sm-12 col-xs-12">
+          <div class="card">
+            <img src="assets/img/pizza9.jpg" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title"> crusty ham</h5>
+              <p class="card-text">Rating: <i class="fas fa-star"></i>  <i class="fas fa-star"></i>  <i class="fas fa-star"></i></p>
+              <button type="button" class="btn- btn-outline-secondary" data-toggle="modal" data-target="#pizza-five"><i class="fas fa-shopping-cart"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 sol-sm-12 col-xs-12">
+          <div class="card">
+            <img src="assets/img/pizza8.jpg" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title"> raisined mozarella</h5>
+              <p class="card-text">Rating: <i class="fas fa-star"></i>  <i class="fas fa-star"></i>  <i class="fas fa-star"></i></p>
+              <button type="button" class="btn- btn-outline-secondary" data-toggle="modal" data-target="#pizza-six"><i class="fas fa-shopping-cart"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 sol-sm-12 col-xs-12">
+          <div class="card">
+            <img src="assets/img/pizzahome.jpg" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title"> turkey tikka</h5>
+              <p class="card-text">Rating: <i class="fas fa-star"></i>  <i class="fas fa-star"></i>  <i class="fas fa-star"></i></p>
+              <button type="button" class="btn- btn-outline-secondary" data-toggle="modal" data-target="#pizza-one"><i class="fas fa-shopping-cart"></i> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- modals -->
+    <div class="modal fade" id="pizza-one" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pizza-one-label">Mushroom</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span area-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="pizza-one-form">
+              <label for="">
+                Quantity:
+                <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+              </label>
+              <br>
+              <label>
+                Pick your size:
+                <select id="size-selector" required class="form-control">
+                <option>Small</option>
+                <option >Medium</option>
+                <option>Large</option>
+                <option>Mega</option>
+              </select>
+              </label>
+              <br>
+              <label>
+                Pick your crust:
+                <select id="crust-selector" required class="form-control">
+                  <option>pokin crust -thin</option>
+                  <option>St. Louis crust -squared</option>
+                  <option> flatbed crust</option>
+                  <option>lazzlo's</option>
+                </select>
+              </label>
+              <label>
+                Topping Options:
+                <select  id="topping-selector" required class="form-control">
+                  <option>Standard</option>
+                  <option>Extra ham</option>
+                  <option>Extra chicken</option>
+                  <option>Extra beef</option>
+                  <option>Extra turkey</option>
+                  <option>Extra jalapenos</option>
+                  <option>Extra mozarella cheese</option>
+                  <option>Extra bacon</option>
+                  <option>Extra onions</option>
+                  <option>Extra sauce</option>
+                  <option>Extra spinach</option>
+                  <option>Extra balsamic</option>
+                </select>
+              </label>
+              <div class="form-check">
+                <label for="delivery-options">
+                  <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
+                </label>
+                <label for="delivery-options">
+                  pick-up:
+                  <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked">
+                </label>
+                <br>
+                <label id="location-hide">
+                  <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location">
+                </label>
+              </div>
+              <div class="container">
+                <div class="summary">
+                  <div id="price-breakdown">
+                    <div class="summary-items">
+                      <p class="space"> <span id="size-price"></span> </p>
+                    </div>
+                    <div class="summary-items">
+                      <p class="space"> <span id="crust-price"></span> </p>
+                    </div>
+                    <div class="summary-items">
+                      <p class="space"> <span id="toppings-price"></span> </p>
+                    </div>
+                    <div class="summary-items">
+                      <p class="space"> <span id="delivery-price"></span> </p>
+                    </div>
+                    <div class="summary-items total" id="total" >
+                      <h5 class="sum-price" id="total-price"></h5>
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-primary" id="get-price" value="Next">
+                <button type="button" class="btn btn-success" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i>Checkout</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  <!--second card -->
+    <div class="modal fade" id="pizza-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pizza-two-label">Meaty sundae</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span area-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="pizza-two-form">
+              <label>
+                Quantity:
+                <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+              </label>
+              <br>
+              <label>
+                Pick your size:
+                <select id="size-selector" required class="form-control">
+                <option>Small</option>
+                <option >Medium</option>
+                <option>Large</option>
+                <option>Mega</option>
+              </select>
+              </label>
+              <br>
+              <label>
+                Pick your crust:
+                <select id="crust-selector" required class="form-control">
+                  <option>pokin crust -thin</option>
+                  <option>St. Louis crust -squared</option>
+                  <option> flatbed crust</option>
+                  <option>lazzlo's</option>
+                </select>
+              </label>
+              <label>
+                Topping Options:
+                <select  id="topping-selector" required class="form-control">
+                  <option>Standard</option>
+                  <option>Extra ham</option>
+                  <option>Extra chicken</option>
+                  <option>Extra beef</option>
+                  <option>Extra turkey</option>
+                  <option>Extra jalapenos</option>
+                  <option>Extra mozarella cheese</option>
+                  <option>Extra bacon</option>
+                  <option>Extra onions</option>
+                  <option>Extra sauce</option>
+                  <!-- <option>Extra spinach</option>
+                  <option>Extra balsamic</option> -->
+                </select>
+              </label>
+              <div class="form-check">
+                <label for="delivery-options">
+                  <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
+                </label>
+                <label for="delivery-options">
+                  pick-up:
+                  <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked">
+                </label>
+                <br>
+                <label id="location-hide">
+                  <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location">
+                </label>
+              </div>
+              <div class="container">
+                <div class="summary">
+                  <div id="price-breakdown">
+                    <div class="summary-items">
+                      <p class="space"> <span id="size-price"></span> </p>
+                    </div>
+                    <div class="summary-items">
+                      <p class="space"> <span id="crust-price"></span> </p>
+                    </div>
+                    <div class="summary-items">
+                      <p class="space"> <span id="toppings-price"></span> </p>
+                    </div>
+                    <div class="summary-items">
+                      <p class="space"> <span id="delivery-price"></span> </p>
+                    </div>
+                    <div class="summary-items total" id="total" >
+                      <h5 class="sum-price" id="total-price"></h5>
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-primary" id="get-price" value="Next">
+                <button type="button" class="btn btn-success" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i>Checkout</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- card -->
+<div class="modal fade" id="pizza-seven" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pizza-seven-label">Turkey tikka</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span area-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="pizza-seven-form">
+          <label>
+            Quantity:
+            <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+          </label>
+          <br>
+          <label>
+            Pick your size:
+            <select id="size-selector" required class="form-control">
+            <option>Small</option>
+            <option >Medium</option>
+            <option>Large</option>
+            <option>Mega</option>
+          </select>
+          </label>
+          <br>
+          <label>
+            Pick your crust:
+            <select id="crust-selector" required class="form-control">
+              <option>pokin crust -thin</option>
+              <option>St. Louis crust -squared</option>
+              <option> flatbed crust</option>
+              <option>lazzlo's</option>
+            </select>
+          </label>
+          <label>
+            Topping Options:
+            <select  id="topping-selector" required class="form-control">
+              <option>Standard</option>
+              <option>Extra beef</option>
+              <option>Extra turkey</option>
+              <option>Extra mozarella cheese</option>
+              <option>Extra onions</option>
+              <option>Extra sauce</option>
+              <option>Extra spinach</option>
+              <option>Extra balsamic</option>
+            </select>
+          </label>
+          <div class="form-check">
+            <label for="delivery-options">
+              <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
+            </label>
+            <label for="delivery-options">
+              pick-up:
+              <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked">
+            </label>
+            <br>
+            <label id="location-hide">
+              <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location">
+            </label>
+          </div>
+          <div class="container">
+            <div class="summary">
+              <div id="price-breakdown">
+                <div class="summary-items">
+                  <p class="space"> <span id="size-price"></span> </p>
+                </div>
+                <div class="summary-items">
+                  <p class="space"> <span id="crust-price"></span> </p>
+                </div>
+                <div class="summary-items">
+                  <p class="space"> <span id="toppings-price"></span> </p>
+                </div>
+                <div class="summary-items">
+                  <p class="space"> <span id="delivery-price"></span> </p>
+                </div>
+                <div class="summary-items total" id="total" >
+                  <h5 class="sum-price" id="total-price"></h5>
+                </div>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-primary" id="get-price" value="Next">
+            <button type="button" class="btn btn-success" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i>Checkout</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- about us -->
+  <div class="container-large" id="about">
+    <div class="col-md-12">
+      <div class="row about-us">
+        <div class="col-d-7">
+          <div class="container founder-section">
+            <h1>About us</h1>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
 
    <script src="js/scripts.js"></script>
 

@@ -7,14 +7,14 @@ html {
     padding: 0px;
 }
 .alert {
-  texti-align: center;
+  text-align: center;
   margin-bottom: auto;
   display:none;
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  borger-radius: 0px;
+  border-radius: 0px;
   z-index: 9999;
 
 }
@@ -69,4 +69,18 @@ h1 {
 }
 .carousel-caption p {
     font-size: 40px;
+}
+
+.card {
+    margin-bottom: 20px;
+    height: auto;
+    width: 250px;
+
+}
+.flex {
+    display: flex;
+}
+.card-img{
+    height: 250px;
+    width: auto;
 }

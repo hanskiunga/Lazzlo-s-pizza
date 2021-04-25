@@ -157,7 +157,6 @@
         </div>
       </div>
     </div>
-
 <!-- modals -->
     <div class="modal fade" id="pizza-one" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -253,7 +252,7 @@
 
       </div>
     </div>
-  <!--second card -->
+<!--second card -->
     <div class="modal fade" id="pizza-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -267,7 +266,7 @@
             <form id="pizza-two-form">
               <label>
                 Quantity:
-                <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+                <input type="number" class="form-control" id="pizza-quantity2" min="1" required>
               </label>
               <br>
               <label>
@@ -282,7 +281,7 @@
               <br>
               <label>
                 Pick your crust:
-                <select id="crust-selector" required class="form-control">
+                <select id="crust-selector2" required class="form-control">
                   <option>pokin crust -thin</option>
                   <option>St. Louis crust -squared</option>
                   <option> flatbed crust</option>
@@ -291,7 +290,7 @@
               </label>
               <label>
                 Topping Options:
-                <select  id="topping-selector" required class="form-control">
+                <select  id="topping-selector2" required class="form-control">
                   <option>Standard</option>
                   <option>Extra ham</option>
                   <option>Extra chicken</option>
@@ -308,39 +307,40 @@
               </label>
               <div class="form-check">
                 <label for="delivery-options">
-                  <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
+                  Delivery:
+                  <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered2" required>
                 </label>
                 <label for="delivery-options">
                   pick-up:
-                  <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked">
+                  <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked2">
                 </label>
                 <br>
                 <label id="location-hide2">
-                  <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location">
+                  <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location2">
                 </label>
               </div>
               <div class="container">
                 <div class="summary">
-                  <div id="price-breakdown">
+                  <div id="price-breakdown2">
                     <div class="summary-items">
-                      <p class="space"> <span id="size-price"></span> </p>
+                      <p class="space"> <span id="size-price2"></span> </p>
                     </div>
                     <div class="summary-items">
-                      <p class="space"> <span id="crust-price"></span> </p>
+                      <p class="space"> <span id="crust-price2"></span> </p>
                     </div>
                     <div class="summary-items">
-                      <p class="space"> <span id="toppings-price"></span> </p>
+                      <p class="space"> <span id="toppings-price2"></span> </p>
                     </div>
                     <div class="summary-items">
-                      <p class="space"> <span id="delivery-price"></span> </p>
+                      <p class="space"> <span id="delivery-price2"></span> </p>
                     </div>
-                    <div class="summary-items total" id="total" >
-                      <h5 class="sum-price" id="total-price"></h5>
+                    <div class="summary-items total" id="total2" >
+                      <h5 class="sum-price" id="total-price2"></h5>
                     </div>
                   </div>
                 </div>
-                <input type="submit" class="btn btn-primary" id="get-price" value="Next">
-                <button type="button" class="btn btn-success" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i>Checkout</button>
+                <input type="submit" class="btn btn-primary" id="get-price2" value="Next">
+                <button type="button" class="btn btn-success" id="checkout2" data-dismiss="modal"><i class="fas fa-credit-card"></i>Checkout</button>
               </div>
             </form>
           </div>
@@ -349,25 +349,25 @@
       </div>
     </div>
 <!-- card -->
-<div class="modal fade" id="pizza-seven" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="pizza-six" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="pizza-seven-label">Turkey tikka</h5>
+        <h5 class="modal-title" id="pizza-six-label">Turkey tikka</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span area-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form id="pizza-seven-form">
+        <form id="pizza-six-form">
           <label>
             Quantity:
-            <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+            <input type="number" class="form-control" id="pizza-quantity6" min="1" required>
           </label>
           <br>
           <label>
             Pick your size:
-            <select id="size-selector" required class="form-control">
+            <select id="size-selector6" required class="form-control">
             <option>Small</option>
             <option >Medium</option>
             <option>Large</option>
@@ -377,7 +377,7 @@
           <br>
           <label>
             Pick your crust:
-            <select id="crust-selector" required class="form-control">
+            <select id="crust-selector6" required class="form-control">
               <option>pokin crust -thin</option>
               <option>St. Louis crust -squared</option>
               <option> flatbed crust</option>
@@ -386,7 +386,7 @@
           </label>
           <label>
             Topping Options:
-            <select  id="topping-selector" required class="form-control">
+            <select  id="topping-selector6" required class="form-control">
               <option>Standard</option>
               <option>Extra beef</option>
               <option>Extra turkey</option>
@@ -399,39 +399,40 @@
           </label>
           <div class="form-check">
             <label for="delivery-options">
-              <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
+              Delivery:
+              <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered6" required>
             </label>
             <label for="delivery-options">
               pick-up:
-              <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked">
+              <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked6">
             </label>
             <br>
-            <label id="location-hide3">
-              <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location">
+            <label id="location-hide6">
+              <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location6">
             </label>
           </div>
           <div class="container">
             <div class="summary">
-              <div id="price-breakdown">
+              <div id="price-breakdown6">
                 <div class="summary-items">
-                  <p class="space"> <span id="size-price"></span> </p>
+                  <p class="space"> <span id="size-price6"></span> </p>
                 </div>
                 <div class="summary-items">
-                  <p class="space"> <span id="crust-price"></span> </p>
+                  <p class="space"> <span id="crust-price6"></span> </p>
                 </div>
                 <div class="summary-items">
-                  <p class="space"> <span id="toppings-price"></span> </p>
+                  <p class="space"> <span id="toppings-price6"></span> </p>
                 </div>
                 <div class="summary-items">
-                  <p class="space"> <span id="delivery-price"></span> </p>
+                  <p class="space"> <span id="delivery-price6"></span> </p>
                 </div>
-                <div class="summary-items total" id="total" >
-                  <h5 class="sum-price" id="total-price"></h5>
+                <div class="summary-items total" id="total6" >
+                  <h5 class="sum-price" id="total-price6"></h5>
                 </div>
               </div>
             </div>
-            <input type="submit" class="btn btn-primary" id="get-price" value="Next">
-            <button type="button" class="btn btn-success" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i>Checkout</button>
+            <input type="submit" class="btn btn-primary" id="get-price6" value="Next">
+            <button type="button" class="btn btn-success" id="checkout6" data-dismiss="modal"><i class="fas fa-credit-card"></i>Checkout</button>
           </div>
         </form>
       </div>

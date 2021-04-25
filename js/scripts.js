@@ -93,7 +93,7 @@ $("#to-be-delivered").click(()=>{
     $("#location-hide").show();
 });
 
-$("#to-be-picked").click((){
+$("#to-be-picked").click(()=>{
     $("#location-hide").hide();
 });
 
@@ -104,3 +104,34 @@ $("#to-be-delivered2").click(()=>{
 $("#to-be-picked2").click(()=>{
     $("#location-hide2").show();
 });
+
+$("#get-price").click(()=>{
+    $("#checkout").show();
+});
+$("#get-price2").click(()=>{
+    $("#checkout2").show();
+});
+$("#get-price6").click(()=>{
+    $("#checkout6").show();
+});
+
+let deliveryLocationA = $("#delivery-location").val();
+let deliveryLocationB = $("#delivery-location2").val();
+let deliveryLocationC = $("#delivery-location6").val();
+
+$("#checkout").click(()=>{
+    $("#where-to").text(deliveryLocationA);
+    $("#alert").show();
+});
+$("#checkout2").click(()=>{
+    $("#where-to2").text(deliveryLocationA);
+    $("#alert2").show();
+});
+$("#checkout6").click(()=>{
+    $("#where-to6").text(deliveryLocationA);
+    $("#alert6").show();
+});
+
+//ui logic
+
+

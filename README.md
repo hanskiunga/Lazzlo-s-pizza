@@ -4,6 +4,7 @@ A Lazzlo's Kitchen Website for ordering pizza
 
 ## Author
 Hans Kiunga
+![image](https://user-images.githubusercontent.com/81565379/116002885-5c16a500-a604-11eb-90ae-45f64d73947c.png)
 
 ##### Technologies Used
 

@@ -73,7 +73,8 @@ h1 {
 }
 
 .card {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 8px;
     height: auto;
     width: 300px;
     left: 40px;
@@ -105,4 +106,92 @@ form {
 
 .drop {
     width: 210px;
+}
+
+
+
+.about-img{
+    float: left;
+    padding: 2px 20px;
+
+}
+#location-hide {
+    display: none;
+}
+#location-hide2{
+    display: none;
+}
+.summary{
+    text-align: left;
+    float: left;
+    margin-bottom: 0px;
+}
+.summary-items{
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+space{
+    margin-bottom: 0px;
+}
+.total {
+    font-weight: 800;
+}
+#get-price:hover{
+    text-decoration: none;
+}
+#pizza-quantity{
+    width: 100px;
+}
+#pizza-quantity2{
+    width: 100px;
+}
+#pizza-quantity7{
+    width: 100px;
+}
+.sum-price{
+    cursor:pointer;
+}
+#checkout{
+    display:none;
+}
+#checkout2{
+    display: none;
+}
+#checkout7{
+    display: none;
+}
+
+.links{
+    width: 50px;
+    word-spacing:30px;
+    text-align: center;
+
+}
+
+.branch {
+    width: 30%;
+    padding-top: 2%;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+.branch h5{
+    font-size: 18px;
+}
+.footer{
+    background-image: url(../assets/img/footer.jpg);
+    background-position: center;
+    background-size: 100%;
+    color: #ffffff;
+}
+.footer-text {
+    padding: 3%;
+}
+.footer-text p{
+    margin: 0px;
+    padding: 0px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 15px;
 }

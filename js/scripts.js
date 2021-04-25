@@ -11,22 +11,22 @@ class Pizza{
     }
 
     pricePerType(){
-        if (this.type === "lazzlo veggie"){
+        if (this.type == "lazzlo veggie"){
             this.price = 400;
             return this.price;
-        } else if (this.type === "meaty sundae"){
+        } else if (this.type == "meaty sundae"){
             this.price = 500;
             return this.price;
-        } else if (this.type === "chicken spicey"){
+        } else if (this.type == "chicken spicey"){
             this.price = 600;
             return this.price;
-        } else if (this.type === "crusty pepperoni"){
+        } else if (this.type == "crusty pepperoni"){
             this.price =300;
             return this.price;
-        } else if (this.type === "mozarella raisin"){
+        } else if (this.type == "mozarella raisin"){
             this.price =400;
             return this.price;
-        } else if (this.type === "lazzlo turkey tikka"){
+        } else if (this.type == "lazzlo turkey tikka"){
             this.price =600;
             return this.price;
         }
@@ -60,8 +60,36 @@ class Pizza{
         }
     }
 
+    addToppings(){
+        if(this.toppings == "Extra ham"){
+            return 50;
+        } else if (this.toppings == "Extra chicken"){
+            return 50;
+        } else if(this.toppings == "Extra beef"){
+            return 50;
+        } else if(this.toppings == "Extra turkey"){
+            return 50;
+        }else if(this.toppings == "Extra jalapenos"){
+            return 50;
+        }else if(this.toppings == "Extra mozarella cheese"){
+            return 50;
+        }else if(this.toppings == "Extra bacon"){
+            return 50;
+        }else if(this.toppings == "Extra onions"){
+            return 50;
+        } else if(this.toppings == "Extra sauce"){
+            return 50;
+        }else if(this.toppings == "Extra spinach"){
+            return 50;
+        } else if(this.toppings == "Extra balsamic"){
+            return 50;
+        } else {
+            return 0;
+        }
+    }
+
     toDeliver(){
-        if (this.delivery === true){
+        if (this.delivery == true){
             return 200;
         } else {
             return 0;
@@ -72,6 +100,7 @@ class Pizza{
         let pricePerSizeAndType = this.pricePerSize();
         let crustPrice = this.chooseCrust();
         let extraToppingsPrice = this.addToppings();
+
         return pricePerSizeAndType + extraToppingsPrice + crustPrice;
     
     }

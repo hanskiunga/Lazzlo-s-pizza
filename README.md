@@ -5,7 +5,9 @@ A Lazzlo's Kitchen Website for ordering pizza
 ## Author
 Hans Kiunga
 ![image](https://user-images.githubusercontent.com/81565379/116002885-5c16a500-a604-11eb-90ae-45f64d73947c.png)
-
+![image](https://user-images.githubusercontent.com/81565379/116002996-e2cb8200-a604-11eb-845a-7439333381bf.png)
+![image](https://user-images.githubusercontent.com/81565379/116003026-07bff500-a605-11eb-91c3-cfe0a97eb5ac.png)
+![image](https://user-images.githubusercontent.com/81565379/116003067-2625f080-a605-11eb-881a-a24df1c7960b.png)
 ##### Technologies Used
 
 - HTML, CSS, Bootstrap 5, jQuery

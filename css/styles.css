@@ -125,13 +125,14 @@ form {
     text-align: left;
     float: left;
     margin-bottom: 0px;
+    color: black;
 }
 .summary-items{
     display: flex;
     font-size: 13px;
     margin-bottom: 0px;
 }
-space{
+.space{
     margin-bottom: 0px;
 }
 .total {

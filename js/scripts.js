@@ -11,7 +11,7 @@ class Pizza{
     }
 
     pricePerType(){
-        if (this.type === "lazzlo's veggie"){
+        if (this.type === "lazzlo veggie"){
             this.price = 400;
             return this.price;
         } else if (this.type === "meaty sundae"){
@@ -26,7 +26,7 @@ class Pizza{
         } else if (this.type === "mozarella raisin"){
             this.price =400;
             return this.price;
-        } else if (this.type === "lazzlo's turkey tikka"){
+        } else if (this.type === "lazzlo turkey tikka"){
             this.price =600;
             return this.price;
         }
@@ -53,7 +53,7 @@ class Pizza{
             return 100;
         }else if(this.crust === "flatbed crust"){
             return 50;
-        } else if (this.crust === "lazzlo's crust special"){
+        } else if (this.crust === "lazzlo crust"){
             return 150;
         } else {
             return 0;
@@ -105,12 +105,15 @@ $("#to-be-picked2").click(()=>{
     $("#location-hide2").show();
 });
 
+//next button
 $("#get-price").click(()=>{
     $("#checkout").show();
 });
+
 $("#get-price2").click(()=>{
     $("#checkout2").show();
 });
+
 $("#get-price6").click(()=>{
     $("#checkout6").show();
 });
@@ -124,11 +127,11 @@ $("#checkout").click(()=>{
     $("#alert").show();
 });
 $("#checkout2").click(()=>{
-    $("#where-to2").text(deliveryLocationA);
+    $("#where-to2").text(deliveryLocationB);
     $("#alert2").show();
 });
 $("#checkout6").click(()=>{
-    $("#where-to6").text(deliveryLocationA);
+    $("#where-to6").text(deliveryLocationC);
     $("#alert6").show();
 });
 
@@ -143,12 +146,12 @@ $("#pizza-one-form").submit((event)=>{
     let pickUp = $("#to-be-picked").is(":checked");
 
     const getDeliveryOption = () => {
-        if (delivery == true && pickUp ==false){
+        if (delivery == true && pickUp == false){
             return true;
-        }else if (delivery ==flase && pickUp ==true){
+        } else if (delivery == false && pickUp == true){
             return false;
         }
-    }
+    };
 
     let optionOfDelivery = getDeliveryOption ();
     let pizzaQuantity =Number($("#pizza-quantity").val());
@@ -178,7 +181,7 @@ $("#pizza-two-form").submit((event)=>{
             return true;
         } else if (delivery == false && pickUp == true){
             return false;
-        }
+        } 
     }
 
     let optionOfDelivery = getDeliveryOption();

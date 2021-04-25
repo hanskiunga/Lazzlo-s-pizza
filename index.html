@@ -69,7 +69,7 @@
                             <img class="d-block w-100" src="assets/img/carousel2.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="assets/img/pizza0.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="assets/img/carousel3.jpeg" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -95,7 +95,7 @@
           <div class="card">
             <img src="assets/img/pizza1.jpg" class="card-img" alt="">
             <div class="card-body">
-              <h5 class="card-title"> lazzlo's veggie </h5>
+              <h5 class="card-title"> lazzlo veggie </h5>
               <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star"></i>  <i class="fas fa-star"></i></p>
               <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#pizza-one"><i class="fas fa-shopping-cart"></i> </button>
             </div>
@@ -145,7 +145,7 @@
           <div class="card">
             <img src="assets/img/pizzahome.jpg" class="card-img" alt="">
             <div class="card-body">
-              <h5 class="card-title"> lazzlo's turkey tikka</h5>
+              <h5 class="card-title"> lazzlo turkey tikka</h5>
               <p class="card-text">Rating: <i class="fas fa-star"></i>  <i class="fas fa-star"></i>  <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
               <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#pizza-seven"><i class="fas fa-shopping-cart"></i> </button>
             </div>
@@ -158,7 +158,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="pizza-one-label">lazzlo's veggie</h5>
+            <h5 class="modal-title" id="pizza-one-label">lazzlo veggie</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span area-hidden="true">&times;</span>
             </button>
@@ -172,7 +172,7 @@
               <br>
               <label>
                 Pick your size:
-                <select id="size-selector" required class="form-control">
+                <select class="form-control" id="size-selector" required >
                 <option>Small</option>
                 <option >Medium</option>
                 <option>Large</option>
@@ -182,16 +182,16 @@
               <br>
               <label>
                 Pick your crust:
-                <select id="crust-selector" required class="form-control">
+                <select class="form-control" id="crust-selector" required >
                   <option>pokin crust -thin</option>
                   <option>St. Louis crust -squared</option>
                   <option> flatbed crust</option>
-                  <option>lazzlo's</option>
+                  <option>lazzlo crust</option>
                 </select>
               </label>
               <label>
                 Topping Options:
-                <select  id="topping-selector" required class="form-control">
+                <select  class="form-control" id="topping-selector" required >
                   <option>Standard</option>
                   <option>Extra ham</option>
                   <option>Extra chicken</option>
@@ -208,11 +208,12 @@
               </label>
               <div class="form-check">
                 <label for="delivery-options">
+                  Delivery:
                   <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
                 </label>
                 <label for="delivery-options">
-                  pick-up:
-                  <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked">
+                  Pick-up:
+                  <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked" required>
                 </label>
                 <br>
                 <label id="location-hide">
@@ -267,7 +268,7 @@
               <br>
               <label>
                 Pick your size:
-                <select id="size-selector" required class="form-control">
+                <select class="form-control" id="size-selector" required >
                 <option>Small</option>
                 <option >Medium</option>
                 <option>Large</option>
@@ -277,16 +278,17 @@
               <br>
               <label>
                 Pick your crust:
-                <select id="crust-selector2" required class="form-control">
+                <select class="form-control drop" id="crust-selector2" required >
                   <option>pokin crust -thin</option>
                   <option>St. Louis crust -squared</option>
                   <option> flatbed crust</option>
-                  <option>lazzlo's</option>
+                  <option>lazzlo crust</option>
                 </select>
               </label>
+              <br>
               <label>
                 Topping Options:
-                <select  id="topping-selector2" required class="form-control">
+                <select class="form-control drop" id="topping-selector2" required >
                   <option>Standard</option>
                   <option>Extra ham</option>
                   <option>Extra chicken</option>
@@ -297,8 +299,6 @@
                   <option>Extra bacon</option>
                   <option>Extra onions</option>
                   <option>Extra sauce</option>
-                  <!-- <option>Extra spinach</option>
-                  <option>Extra balsamic</option> -->
                 </select>
               </label>
               <div class="form-check">
@@ -307,12 +307,12 @@
                   <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered2" required>
                 </label>
                 <label for="delivery-options">
-                  pick-up:
-                  <input type="radio" class="delivery" name="pick-up" value="pick-up" id="to-be-picked2">
+                  Pick-up:
+                  <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked2" required>
                 </label>
                 <br>
                 <label id="location-hide2">
-                  <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location2">
+                  <input type="text"  placeholder="Deliver To" id="delivery-location2">
                 </label>
               </div>
               <div class="container">
@@ -377,7 +377,7 @@
               <option>pokin crust -thin</option>
               <option>St. Louis crust -squared</option>
               <option> flatbed crust</option>
-              <option>lazzlo's crust special</option>
+              <option>lazzlo crust</option>
             </select>
           </label>
           <label>

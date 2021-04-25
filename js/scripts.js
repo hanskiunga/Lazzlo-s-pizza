@@ -43,7 +43,9 @@ class Pizza{
         } else if (this.size === "Medium"){
             typePrice +=300;
             return typePrice;
-        } 
+        } else {
+            return typePrice;
+        }
     }
 
     chooseCrust(){
@@ -189,9 +191,9 @@ $("#pizza-one-form").submit((event)=>{
 
     let lazzlo= new Pizza (pizzaName, pizzaSize, crustType, toppingType, optionOfDelivery, pizzaQuantity);
     $("#total-price").text ("KES. " + lazzlo.getTotalPlusDelivery());
-    $("#size-price").text("Size: " + lazzlo.pricePerSize());
-    $("#crust-price").text("Crust: " + lazzlo.chooseCrust());
-    $("#toppings-price").text("Toppings " + lazzlo.addToppings());
+    $("#size-price").text(lazzlo.size + ":" + lazzlo.pricePerSize());
+    $("#crust-price").text(lazzlo.crust + ":" + lazzlo.chooseCrust());
+    $("#toppings-price").text(lazzlo.toppings + ":" + lazzlo.addToppings());
     $("#delivery-price").text("Delivery fee: " + lazzlo.toDeliver());
 });
 
@@ -211,16 +213,16 @@ $("#pizza-two-form").submit((event)=>{
         } else if (delivery == false && pickUp == true){
             return false;
         } 
-    }
+    };
 
     let optionOfDelivery = getDeliveryOption();
     let pizzaQuantity = Number($("#pizza-quantity2").val());
 
     let meaty = new Pizza (pizzaName, pizzaSize, crustType, optionOfDelivery, pizzaQuantity);
     $("#total-price2").text ("KES. " + meaty.getTotalPlusDelivery());
-    $("#size-price2").text("Size: " + meaty.pricePerSize());
-    $("#crust-price2").text("Crust: " + meaty.chooseCrust());
-    $("#toppings-price2").text("Toppings " + meaty.addToppings());
+    $("#size-price2").text(meaty.size + ":"  + meaty.pricePerSize());
+    $("#crust-price2").text(meaty.crust + ":" + meaty.chooseCrust());
+    $("#toppings-price2").text(meaty.toppings + ":"  + meaty.addToppings());
     $("#delivery-price2").text("Delivery fee: " + meaty.toDeliver());
 
 });

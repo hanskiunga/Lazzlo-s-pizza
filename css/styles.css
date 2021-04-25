@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
 .container-fluid{
     margin: 0px;
     padding: 0px;
@@ -74,7 +75,8 @@ h1 {
 .card {
     margin-bottom: 20px;
     height: auto;
-    width: 250px;
+    width: 300px;
+    left: 40px;
 
 }
 .flex {
@@ -83,4 +85,24 @@ h1 {
 .card-img{
     height: 250px;
     width: auto;
+}
+#menu {
+    text-align: center;
+}
+.menu {
+    background-image: url(../assets/img/homepage.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+.card {
+    background: rgba(0, 0, 0, 0.2);
+}
+/* modal styling */
+form {
+    text-align: center;
+}
+
+.drop {
+    width: 210px;
 }

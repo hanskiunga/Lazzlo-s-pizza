@@ -133,5 +133,64 @@ $("#checkout6").click(()=>{
 });
 
 //ui logic
+$("#pizza-one-form").submit((event)=>{
+    event.preventDefault();
+    let pizzaName = $("#pizza-one-label").text();
+    let pizzaSize = $("#size-selector").val();
+    let crustType = $("#crust-selector").val();
+    let toppingType = $("#topping-selector").val();
+    let delivery = $("#to-be-delivered").is(":checked");
+    let pickUp = $("#to-be-picked").is(":checked");
+
+    const getDeliveryOption = () => {
+        if (delivery == true && pickUp ==false){
+            return true;
+        }else if (delivery ==flase && pickUp ==true){
+            return false;
+        }
+    }
+
+    let optionOfDelivery = getDeliveryOption ();
+    let pizzaQuantity =Number($("#pizza-quantity").val());
+
+    //creating an instance of class Pizza
+
+    let lazzlo= new Pizza (pizzaName, pizzaSize, crustType, toppingType, optionOfDelivery, pizzaQuantity);
+    $("#total-price").text ("KES. " + lazzlo.getTotalPlusDelivery());
+    $("#size-price").text("Size: " + lazzlo.pricePerSize());
+    $("#crust-price").text("Crust: " + lazzlo.chooseCrust());
+    $("#toppings-price").text("Toppings " + lazzlo.addToppings());
+    $("#delivery-price").text("Delivery fee: " + lazzlo.toDeliver());
+});
+
+//second pizza
+$("#pizza-two-form").submit((event)=>{
+    event.preventDefault();
+    let pizzaName = $("#pizza-two-label").text();
+    let pizzaSize = $("#size-selector2").val();
+    let crustType = $("#crust-selector2").val();
+    let toppingType = $("#topping-selector2").val();
+    let delivery = $("#to-be-delivered2").is(":checked");
+    let pickUp = $("#to-be-picked2").is(":checked");
+
+    const getDeliveryOption = () => {
+        if ( delivery == true && pickUp == false){
+            return true;
+        } else if (delivery == false && pickUp == true){
+            return false;
+        }
+    }
+
+    let optionOfDelivery = getDeliveryOption();
+    let pizzaQuantity = Number($("#pizza-quantity2").val());
+
+    let meaty = new Pizza (pizzaName, pizzaSize, crustType, optionOfDelivery, pizzaQuantity);
+    $("#total-price2").text ("KES. " + meaty.getTotalPlusDelivery());
+    $("#size-price2").text("Size: " + meaty.pricePerSize());
+    $("#crust-price2").text("Crust: " + meaty.chooseCrust());
+    $("#toppings-price2").text("Toppings " + meaty.addToppings());
+    $("#delivery-price2").text("Delivery fee: " + meaty.toDeliver());
+
+});
 
 

@@ -21,26 +21,33 @@ html {
 }
 
 .navbar {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    padding: 0px;
 }
 .navbar .navbar-brand {
-    margin-left: 0%;
-    size: 5%;
-    font-size: 1.3em;
+    font-weight: bolder;
+    margin-left: 5%;
+    color: #cdcdcd;
+    font-size: 1.5em;
 
 }
 .navbar-text {
-    color: ivory;
     font-weight: 500;
     display: block;
     position: relative;
+    margin-left: 5%;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.4s ease-in;
 }
 .navbar-text:hover{
     transform: scale(1.2);
     color: #ffffff;
+    cursor: pointer;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
+
 .navbar .nav-item a {
     font-weight: 700;
     display: block;
@@ -57,9 +64,11 @@ h1 {
     height: 100%;
 }
 .carousel-caption {
+    color: #fff;
     text-align: right;
-    top: 45%;
+    top: 5%;
     left: 10%;
+    right: 75%;
     width: 550px;
     bottom: auto;
     transform: translate(100%, 110%);
@@ -67,9 +76,10 @@ h1 {
 .carousel-caption h5 {
     color: inherit;
     font-weight: 800;
+    font-size: 38px;
 }
 .carousel-caption p {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .card {

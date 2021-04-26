@@ -7,27 +7,27 @@ class Pizza{
         this.toppings = toppings;
         this.delivery = delivery;
         this.orders = orders;
-        this.price = 500; 
+        this.price = 500;
     }
 
     pricePerType(){
         if (this.type == "lazzlo veggie"){
-            this.price = 400;
+            this.price = 500;
             return this.price;
         } else if (this.type == "meaty sundae"){
             this.price = 500;
             return this.price;
         } else if (this.type == "chicken spicey"){
-            this.price = 600;
+            this.price = 500;
             return this.price;
         } else if (this.type == "crusty pepperoni"){
-            this.price =300;
+            this.price =500;
             return this.price;
         } else if (this.type == "mozarella raisin"){
-            this.price =400;
+            this.price =500;
             return this.price;
         } else if (this.type == "lazzlo turkey tikka"){
-            this.price =600;
+            this.price =500;
             return this.price;
         }
     }
@@ -104,7 +104,7 @@ class Pizza{
         let extraToppingsPrice = this.addToppings();
 
         return pricePerSizeAndType + extraToppingsPrice + crustPrice;
-    
+
     }
 
     quantityPrice(){
@@ -212,7 +212,7 @@ $("#pizza-two-form").submit((event)=>{
             return true;
         } else if (delivery == false && pickUp == true){
             return false;
-        } 
+        }
     };
 
     let optionOfDelivery = getDeliveryOption();
@@ -226,5 +226,3 @@ $("#pizza-two-form").submit((event)=>{
     $("#delivery-price2").text("Delivery fee: " + meaty.toDeliver());
 
 });
-
-
